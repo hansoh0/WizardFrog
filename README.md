@@ -1,5 +1,5 @@
 
-# rTwo
+# RTWO
 
 rTwo is the not-so state-of-the-art discord bot featuring randomized gifs and pictures, role management, automated announcements, a suggestion box, and jukebox functionality @hansoh0 (https://www.github.com/hansoh0)
 
