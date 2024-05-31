@@ -27,4 +27,9 @@ ExecStart=/usr/bin/python3 /home/rtwo/app/r2.py
 [Install]                                                                                                                                                                                                  
 WantedBy=multi-user.target
 ```
-
+Reload daemons, enable rTwo to start on boot
+```
+sudo systemctl daemon-reload
+sudo systemctl enable rtwo.service
+sudo systemctl start rtwo.service
+```
