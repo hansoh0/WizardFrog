@@ -10,7 +10,7 @@ Install requirements with pip
 ```
 pip install -r requirements.txt
 ```
-## How to Use
+## Setup
 The bot is best set up as a service on a container
 ```
 sudo vi /etc/systemd/system/rtwo.service
