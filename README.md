@@ -14,17 +14,17 @@ pip install -r requirements.txt
 The bot is best set up as a service on a container
 ```
 sudo vi /etc/systemd/system/rtwo.service
------------------------------------------
+```
+```
 [Unit]                                                                                                                                                                                                     
 Description=R2 is the not so state-of-the-art discord bot                                                                                                                                                
 After=networking.target                                                                                                                                                                                    
                                                                                                                                                                                                            
 [Service]                                                                                                                                                                                                  
 User=rtwo                                                                                                                                                                                                  
-ExecStart=/usr/bin/python3 /home/rtwo/app/rtwo.py                                                                                                                                              
+ExecStart=/usr/bin/python3 /home/rtwo/app/r2.py                                                                                                                                              
                                                                                                                                                                                                            
 [Install]                                                                                                                                                                                                  
 WantedBy=multi-user.target
-------------------------------------------
 ```
 
