@@ -1,0 +1,14 @@
+services:
+  discord-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: wizardfrog:latest
+    container_name: wizardfrog-discord-bot
+    restart: unless-stopped
+    env_file:
+      - py_components/.env
+    environment:
+      ROOT: /home/wizardfrog/app
+    volumes:
+      - ./store:/home/wizardfrog/app
