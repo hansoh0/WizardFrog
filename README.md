@@ -29,6 +29,23 @@ The bot logs via plain `print()` to stdout/stderr - under `systemctl`/`journalct
 
 The bot loads its configuration from a `.env` file in `py_components/` (via `python-dotenv`). See [`docs/CONFIGURATION.md`](docs/CONFIGURATION.md) for the full list of environment variables, what each one controls, and the `store/` directory layout the bot expects `ROOT` to point at.
 
+```
+#env
+
+TOKEN={BOT_TOKEN}
+APP_ID={APP_ID}
+PUBKEY={APP_PUBKEY}
+SERVID={SERVER_ID}
+WELCID={WELCOME_CHANNEL_ID}
+ANNOID={ANNOUNCEMENT_CHANNEL_ID}
+CATHID={MOD_CHANNEL_ID}
+ROOT=/home/full/path/to/app/store
+MC_SERVER_ADDRESS={IP}:{QPORT}
+SITE_ONE={WEBSITE_ONE}
+SITE_TWO={WEBSITE_TWO}
+SITE_THREE={WEBSITE_THREE}
+```
+
 ## Discord server setup
 
 The bot expects specific roles and channels to already exist on the guild - it does not create them. See [`docs/SERVER_SETUP.md`](docs/SERVER_SETUP.md) for the full list (roles: `Council`, `Announcements`, `user`; channels: welcome, announcements, mod/restricted).
